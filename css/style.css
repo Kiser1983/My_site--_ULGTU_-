@@ -1,0 +1,108 @@
+@font-face {
+  font-family: Roboto-Regular; /* Гарнитура шрифта */
+  src: url(../fonts/Roboto-Regular.ttf); /* Путь к файлу со шрифтом */
+ }
+
+ * {
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Roboto-Regular'; */
+}
+
+/* hr {
+  margin: 0px; color:#ffffff;
+} */
+
+.line {
+  width: 100%;
+  height: 2px; background: rgba(100, 100, 100, 0.1);
+}
+
+body { 
+  background: url(../images/fons/background33.png);
+  color: rgb(255, 0, 0);
+}
+
+.main {
+  width: 800px;
+  display: block;
+
+  margin: 0 auto;
+
+  border: 0px solid rgba(0, 0, 0, 0.1);
+  border-collapse: collapse;
+
+  background-color: #f5f5f569; /* Цвет фона #F5F5F5 */
+  
+}
+
+.menu {
+  display: flex;
+  justify-content: right;
+
+  margin: 0px;
+  padding: 5px;
+  border: 0px solid rgba(0, 0, 0, 0.1);
+  border-collapse: collapse;
+
+  color: blue;
+
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  border: 0px solid rgba(0, 0, 0, 0.1);
+  border-collapse: collapse;
+  height: 50px;
+}
+
+.title2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+
+  border: 0px solid rgba(0, 0, 0, 0.1);
+  border-collapse: collapse;
+  height: 20px;
+
+  color: blue;
+}
+
+
+/* .div_parent {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    margin: 10px;
+    
+} */
+
+.btn {
+  width: 20px;
+}
+
+.about {
+  margin: 5px;
+  padding: 5px;
+}
+
+.photo {
+  display: flex;
+  justify-content: left;
+  
+}
+.fio {
+  width: 100%;
+  display: block;
+  justify-content: left;
+  margin-left: 20px;
+}
+
+
+  
