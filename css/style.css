@@ -34,7 +34,7 @@ body {
 	font-size: 14px;
 	color: rgba(23, 109, 234, 1);
 
-  background: #5e5d5d;
+  background: rgba(255, 255, 255, 1)
 }
 
 
@@ -46,7 +46,7 @@ header {
 
   margin: 8px auto ; 
 
-  background: #FFD700;
+  /* background: #FFD700; */
 
   display: flex;
   align-items: center;
@@ -58,8 +58,8 @@ header {
   width: 100%;
   height: 28px;
 
-  background: #dd0b0b;
-  color: rgba(23, 109, 234, 1);
+  /* background: #dd0b0b; */
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -67,7 +67,9 @@ header {
 /* -----HEADER-LEFT------ */
 .header_container_left {
   width: 20%;
-  background: #7cedfc;
+
+  /* background: #7cedfc; */
+
   display: flex;
   align-items: center;
   justify-content: left;
@@ -75,17 +77,19 @@ header {
 /* -----HEADER-CENTER------ */
 .header_container_center {
   width: 60%;
-  background: #fc7ce7;
+
+  /* background: #fc7ce7; */
+
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 
-  color: rgba(23, 109, 234, 1);
+  
 }
 /* -----HEADER-RIGHT----- */
 .header_container_right {
   width: 20%;
-  background: #01eb1c;
+  /* background: #01eb1c; */
   display: flex;
   align-items: center;
   justify-content: right;
@@ -95,7 +99,8 @@ header {
 .burger {
   width: 40px;
   height: 100%;
-  background: #798ebb;
+
+  /* background: #798ebb; */
 
   display: flex;
   align-items: center;
@@ -115,7 +120,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: left;
-  background: chartreuse;
+
+  /* background: chartreuse; */
 }
 
 .logo_ulgtu {
@@ -132,8 +138,6 @@ header {
   font-weight: 700;
   font-size: 10px;
   line-height: 100%;
-
-  color: rgba(23, 109, 234, 1);
 }
 /* -----HEADER-CENTER-TEXT------ */
 .menu_text {
@@ -162,7 +166,8 @@ header {
 
   margin: 0 10px 0 0;
 
-  background: cornflowerblue;
+  background: rgba(23, 109, 234, 1);
+  color: aliceblue;
   border-radius: 99px;
 }
 
@@ -173,11 +178,37 @@ header {
 
   margin: 8px 30px ;
 
-  color: aliceblue;
-
   font-family: "Segoe UI", "Roboto1";
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 100%;
+}
+
+/* -----MAIN_NEWS------ */
+.main_news_container {
+  width: 1440px;
+  height: 400px;
+
+  margin: 16px auto ; 
+
+  /* background: rgb(191, 194, 197); */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main_news_container_center {
+  width: 100%;
+  height: 100%;
+
+  background: rgba(23, 109, 234, 1);
+  
+  margin: 0 10px;
+  border-radius: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
