@@ -4,12 +4,9 @@
     margin: 0;
     border: 0;
 }
-/* a, a:hover, a:visited, a:active { */
-a {  
-  color: inherit;
-  text-decoration: none;
- }
-
+a {
+    text-decoration: none;
+}
 ul, ol, li {
     list-style: none;
 }
@@ -24,15 +21,15 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
 	font-family: "Segoe UI", "Roboto";
-  font-weight: 600;
-	font-size: 14px;
+  font-weight: 900;
+	font-size: 12px;
 	color: #000;
 
   background: #5e5d5d;
 }
 
 
-/* -----HEADER------ */
+/* NAVBAR */
 
 header {
   width: 1440px;
@@ -49,7 +46,7 @@ header {
 }
 
 .header_container {
-  width: 100%;
+  width: 1424px;
   height: 28px;
 
   background: #dd0b0b;
@@ -86,7 +83,6 @@ header {
   justify-content: right;
 }
 
-/* -----BURGER-MENU------ */
 .burger {
   width: 40px;
   height: 100%;
@@ -104,7 +100,6 @@ header {
   justify-content: center;
 }
 
-/* -----LOGO------ */
 .logo {
   width: 80%;
   height: 100%;
@@ -119,21 +114,13 @@ header {
   align-items: center;
   justify-content: center;
 
-  margin: 0 4px 0 8px;
+  margin: 0 4px 0 16px;
 }
 
 .logo_text {
   font-family: "Segoe UI", "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 10px;
-  line-height: 100%;
-}
-/* -----LOGO------ */
-.menu_text {
-  font-family: "Segoe UI", "Roboto";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 100%;
+font-style: normal;
+font-weight: bold;
+font-size: 10px;
+line-height: 100%;
 }
