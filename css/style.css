@@ -38,13 +38,15 @@ body {
 
 	color: rgba(23, 109, 234, 1);
 
-  background: rgba(255, 255, 255, 1)
+  background: rgba(255, 255, 255, 1);
+
+  
 }
 
 /* -----HEADER------ */
 
 header {
-  width: 1440px;
+  /* width: 1440px; */
   height: 58px;
   position: fixed;
   left:0;
@@ -70,7 +72,7 @@ header {
   }
 
 .header_container {
-  width: 100%;
+  width: 1440px;
   height: 28px;
 
   /* background: #dd0b0b; */
@@ -264,6 +266,7 @@ justify-content: center;
   align-items: center;
   justify-content:center;
 
+  margin: 0 0 8px 0;
 }
 
 .main_news_container_left {
@@ -341,7 +344,7 @@ justify-content: center;
 .slider_menu {
   display: flex;
   align-items: center;
-  justify-content: center;
+
 
   background: none;
 
@@ -351,6 +354,7 @@ justify-content: center;
   display: flex;
   align-items: center;
   justify-content: center;
+
   background: none;
 }
 
@@ -446,6 +450,7 @@ justify-content: center;
   align-items: center;
   justify-content:center;
   
+  margin: 8px 0;
 }
 
 .title {
@@ -542,7 +547,7 @@ width: 100%;
 /* ---------Востребованные вакансии---------------*/
 .vocations {
   width: 1440px;
-  height: 380px;
+  height: 600px;
 
   margin: 4px auto ;
 
@@ -557,6 +562,7 @@ width: 100%;
   font-size: 30px;
   font-weight: bold;
 
+    
 }
 
 .vocations_container {
@@ -571,9 +577,10 @@ width: 100%;
 
   display: flex;
   align-items: center;
-  justify-content:space-evenly;
+  justify-content:left;
   
   flex-direction: column;
+
 
 }
 
@@ -584,28 +591,76 @@ width: 100%;
   align-items: center;
   justify-content:space-between;
 
-  
+ 
   flex-direction: row;
-
 
 }
 
 .vocations_container_center {
-  width: 100%;
-  height: 250px;
+  width: 2000px;
+  height: 500px;
+
   display: flex;
-  align-items: center;
-  justify-content:space-around;
+  align-self: stretch;
+  justify-content: start;
   
   flex-direction: row;
 
 }
 
 .vocations_container_bottom {
-
   height: 28px;
   display: flex;
   align-items: center;
   justify-content:center;
   
+  margin: 8px 0;
+}
+
+.vocation {
+  width: 400px;
+  height: 100%;
+  background: rgba(23, 109, 234, 1);
+
+  border-radius: 14px;
+
+  font-size: 14px;
+  font-weight: 400;
+  color: cornsilk;
+
+ margin-right: 32px;
+
+}
+
+.vocation_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+
+  flex-direction: column;
+  
+  overflow: hidden;
+}
+
+.vocation_container_top {
+  height: 70%;
+  margin: 8px;
+  border-radius: 12px;
+
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+  overflow: hidden;
+  background: cornsilk;
+}
+
+.vocation_container_bottom {
+  height: 25%;
+
+  display: flex;
+  align-content: center;
+  justify-content:center;
 }
