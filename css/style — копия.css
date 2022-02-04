@@ -29,7 +29,6 @@ h1, h2, h3, h4, h5, h6 {
 
 
 body {
-
 	font-family: "Segoe UI", "Roboto1";
   font-style: normal;
   font-weight: 600;
@@ -44,19 +43,15 @@ body {
 /* -----HEADER------ */
 
 header {
-  width: 1440px;
-  height: 58px;
+
   position: fixed;
-  left:0;
-  right:0;
-
-  margin: 0 auto;
-
   z-index: 100;
 
 
+  width: 1440px;
+  height: 60px;
 
-  /* margin: 0 auto ; */
+  margin: 0 auto ;
 
   /* background: #FFD700; */
 
@@ -64,8 +59,8 @@ header {
   align-items: center;
   justify-content: center;
 
-  background:rgba(255, 255, 255, 1);
-  /* border-radius: 0 0 16px 16px; */
+  background:rgb(255, 255, 255);
+  border-radius: 0 0 16px 16px;
 
   }
 
@@ -74,8 +69,6 @@ header {
   height: 28px;
 
   /* background: #dd0b0b; */
-
-  margin: 0 auto ;
 
   display: flex;
   align-items: center;
@@ -194,24 +187,8 @@ header {
   font-weight: 700;
   font-size: 14px;
 }
-/* ------- EMPTY_ HEADER -----------*/
-.empty_heder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  /* background: crimson; */
-}
-
-.empty_heder_container {
-height: 80px;
-display: flex;
-align-items: center;
-justify-content: center;
-}
 
 /* -----MAIN_NEWS------ */
-
 .main_news {
   width: 1440px;
   height: 450px;
@@ -236,7 +213,7 @@ justify-content: center;
   background: rgba(23, 109, 234, 1);
   color: aliceblue;
 
-  margin: 0px 10px 0px 10px;
+  margin: 150px 10px 0px 10px;
   border-radius: 16px;
 
   display: flex;
