@@ -7,8 +7,8 @@
 
     <title>Главная страница УлГТУ</title>
 
-    <link href="css/style_slider" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" media="screen and (max-width: 1980px)" href="css/big_style.css" />
+    <link rel="stylesheet" media="screen and (max-width: 1440px)" href="css/small_style.css" />
 
 </head>
 
@@ -24,11 +24,24 @@
 
 <!--  ------------------------- БУРГЕР-МЕНЮ -------------------------  -->  
 
-            <div class="burger">
-                <a href="" class="animation_rotate">
-                    <img src="resources/logo/Burger.svg" alt="burger_menu">
-                </a>
-            </div>
+
+            <ul class="topmenu">
+                <li>  
+                        <div href=""class="animation_rotate">
+                          <a href=""><img src="resources/logo/Burger.svg" alt="burger_menu"></a> 
+                        </div>
+     
+                <ul class="submenu">
+                    <li><a href="">Школьнику</a></li>
+                    <li><a href="">Поступающему</a></li>
+                    <li><a href="">Аспиранту</a></li>
+                    <li><a href="">Выпускнику</a></li>
+                    <li><a href="">Сотруднику</a></li>
+                    <li><a href="">Партнеру</a></li>
+                </ul>
+              </li>
+            </ul>
+
 
 <!--  ------------------------- ЛОГОТИП УНИВЕРСИТЕТА + НАЗВАНИЕ -------------------------  -->         
             <div>
@@ -57,15 +70,35 @@
                 
             <ul class="main-nav-right">
                 <li class="main-nav-right-logo-search">
-                    <div class="animation_scale_infinity">
-                        <img src="resources/logo/Search_logo.svg" alt="button_search" class="main-nav-right-img">
+                    
+                    <div class="top_x">
+                        <ul class="topmenu2">
+                            <li>  
+                                    <div href=""class="animation_scale_infinity">
+                                        <a href="">
+                                            <img src="resources/logo/Search_logo.svg" alt="button_search" class="main-nav-right-img">
+                                        </a> 
+                                    </div>
+                
+                            <ul class="submenu2">
+                                <li> <div > <input type="text" class="input_x"></div></li>
+                                
+                            </ul>
+                        </li>
+                        </ul>
                     </div>
+                    <!-- <div class="animation_scale_infinity">
+                        <img src="resources/logo/Search_logo.svg" alt="button_search" class="main-nav-right-img">
+                    </div> -->
+
                 </li>
                 
                 <li class="main-nav-right-button">
                     <div class="animation_main_button">
                         <a href="#">
-                            <div class="button_hover">Личный кабинет</div>
+                            <div class="button_hover">
+                                <p>Личный кабинет</p>
+                            </div>
                         </a>
                     </div>
                 </li>
@@ -82,33 +115,33 @@
 <main>
 
 <!--  ------------------------- ПУСТОЕ МЕНЮ -------------------------  -->  
-
 <section class="empty_heder">
     <div class="empty_heder_container"></div>
 </section>
 
 <!--  ------------------------- ГЛАВНЫЕ НОВОСТИ -------------------------  -->  
-
-<!--  ==================================  REFACTORING  ==================================   -->
-
-
 <section class="big_news_container">
 
- 
-        <div class="big_news_container_left">
+ <!--  ------------------------- ЛЕВАЯ ЧАСТЬ ГЛАВОЙ НОВОСТИ  -------------------------  -->   
+    <div class="big_news_container_left">
 
-            <div class="big_news_text"><b>УлГТУ</b> вошел в мировой рейтинг <b>Webometrics Ranking of World Universities</b></div>
-            <div class="buttom_big_news"><a href="#" class="buttom_text_big_news">Читать полностью</a></div>
-
+        <div class="big_news_text">
+            <b>УлГТУ</b> вошел в мировой рейтинг <b>Webometrics Ranking of World Universities</b>
         </div>
 
+        <a href="#">
+            <div class="button_big_news_hover">
+                <p>Читать полностью</p>
+            </div>
+        </a>
+    </div>
+
+<!--  ------------------------- ПРАВАЯ ЧАСТЬ ГЛАВОЙ НОВОСТИ  -------------------------  -->   
         <div class="big_news_container_right">
-
-            <div class="big_news_img"></div>
-            
+            <div class="big_news_img"></div>         
         </div>
 
-
+<!--  ------------------------- СТРЕЛКИ - НАВИГАЦИЯ  -------------------------  -->  
         <div class="slider_menu">
 
             <button class="slider_lr">
@@ -117,7 +150,7 @@
 
             <a href="#" class="slider_dot"><img src="resources/dot_white.svg" alt="button_dot"  class="button_dot"></a>
             <a href="#" class="slider_dot"><img src="resources/dot_white.svg" alt="button_dot" class="button_dot"></a>
-            <a href="#" class="slider_dot"><img src="resources/dot_white_select.svg" alt="button_dot_select" class="button_dot_select"></a>
+            <a href="#" class="slider_dot"><img src="resources/dot_white.svg" alt="button_dot" class="button_dot"></a>
             <a href="#" class="slider_dot"><img src="resources/dot_white.svg" alt="button_dot" class="button_dot"></a>
             <a href="#" class="slider_dot"><img src="resources/dot_white.svg" alt="button_dot" class="button_dot"></a>
 
@@ -127,11 +160,9 @@
 
         </div>
 
-
 </section>
 
-
-<!--  ГЛАВНЫЕ НОВОСТИ   -->
+<!--  ------------------------- ЛЕНТА НОВОСТЕЙ  -------------------------  -->  
 <section class="other_news">
     <div class="other_news_container">
 
@@ -218,7 +249,7 @@
 
     <a href="#" class="slider_dot"><img src="resources/dot_blue.svg" alt="button_dot"  class="button_dot"></a>
     <a href="#" class="slider_dot"><img src="resources/dot_blue.svg" alt="button_dot" class="button_dot"></a>
-    <a href="#" class="slider_dot"><img src="resources/dot_blue_select.svg" alt="button_dot_select" class="button_dot_select"></a>
+    <a href="#" class="slider_dot"><img src="resources/dot_blue.svg" alt="button_dot" class="button_dot"></a>
     <a href="#" class="slider_dot"><img src="resources/dot_blue.svg" alt="button_dot" class="button_dot"></a>
     <a href="#" class="slider_dot"><img src="resources/dot_blue.svg" alt="button_dot" class="button_dot"></a>
 
@@ -276,7 +307,7 @@
         </div>
 
         <div class="vocation_container_bottom">
-<div class="btn_voc"><div class="buttom_main_news"><a href="#" class="buttom_text_main_news">Подать заявку</a></div></div>
+            <div class="btn_voc"><div class="button_big_news_hover"><a href="#" class="buttom_text_main_news">Подать заявку</a></div></div>
         </div>
     </div>
 
@@ -295,9 +326,6 @@
 Back-end (оборотная сторона) developer) — это специалист, который занимается программно-административной частью веб-приложения, внутренним содержанием системы, серверными технологиями — базой данных, архитектурой, программной логикой</div>
         </div>
 
-        <div class="vocation_container_center2">
-
-        </div>
 
 
         <div class="vocation_container_center3">
@@ -317,7 +345,7 @@ Back-end (оборотная сторона) developer) — это специа�
         </div>
 
         <div class="vocation_container_bottom">
-<div class="btn_voc"><div class="buttom_main_news"><a href="#" class="buttom_text_main_news">Подать заявку</a></div></div>
+            <div class="btn_voc"><div class="button_big_news_hover"><a href="#" class="buttom_text_main_news">Подать заявку</a></div></div>
         </div>
     </div>
 
@@ -359,7 +387,7 @@ Full-stack developer (или фулстек-разработчик) – это �
         </div>
 
         <div class="vocation_container_bottom">
-<div class="btn_voc"><div class="buttom_main_news"><a href="#" class="buttom_text_main_news">Подать заявку</a></div></div>
+            <div class="btn_voc"><div class="button_big_news_hover"><a href="#" class="buttom_text_main_news">Подать заявку</a></div></div>
 
         </div>
     </div>
@@ -401,7 +429,7 @@ Full-stack developer (или фулстек-разработчик) – это �
         </div>
 
         <div class="vocation_container_bottom">
-<div class="btn_voc"><div class="buttom_main_news"><a href="#" class="buttom_text_main_news">Подать заявку</a></div></div>
+            <div class="btn_voc"><div class="button_big_news_hover"><a href="#" class="buttom_text_main_news">Подать заявку</a></div></div>
         </div>
     </div>
 
@@ -418,7 +446,7 @@ Full-stack developer (или фулстек-разработчик) – это �
 
     <a href="#" class="slider_dot"><img src="resources/dot_blue.svg" alt="button_dot"  class="button_dot"></a>
     <a href="#" class="slider_dot"><img src="resources/dot_blue.svg" alt="button_dot" class="button_dot"></a>
-    <a href="#" class="slider_dot"><img src="resources/dot_blue_select.svg" alt="button_dot_select" class="button_dot_select"></a>
+    <a href="#" class="slider_dot"><img src="resources/dot_blue.svg" alt="button_dot" class="button_dot"></a>
     <a href="#" class="slider_dot"><img src="resources/dot_blue.svg" alt="button_dot" class="button_dot"></a>
     <a href="#" class="slider_dot"><img src="resources/dot_blue.svg" alt="button_dot" class="button_dot"></a>
 
@@ -536,7 +564,7 @@ Full-stack developer (или фулстек-разработчик) – это �
     <div class="footer_container_left">
         <div class="footer_container_column">
 <div>Подписывайтесь на нас в соцсетях</div> 
-<div>
+<div class="social_web">
     <a href=""><img src="resources/logo/vk.svg" alt=""></a>
     <a href=""><img src="resources/logo/inst.svg" alt=""></a>
     <a href=""><img src="resources/logo/tg.svg" alt=""></a>
