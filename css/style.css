@@ -1270,6 +1270,18 @@ font-size: 12px;
   transform: scale(1.08);
 }
 
+.animation-color {
+  display: flex;
+
+  transition: 0.5s linear;
+}
+
+.animation-color:hover {
+ color: rgb(144, 210, 253);
+}
+
+
+
 /* -------        MOVE_SCALE_INFINITY      ------- */
 
 .animation_scale_infinity {
