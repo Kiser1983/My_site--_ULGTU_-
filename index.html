@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
+    <meta charset="utf-8">
     <title>Главная страница УлГТУ</title>
 
     <link href="css/style_slider" rel="stylesheet" type="text/css">
@@ -15,21 +16,45 @@
 <header>
         <div class="header_container">
             <div class="header_container_left">
-<!--  БУРГЕР-МЕНЮ -->
-                <div class="burger">
-                    <div class="logo_burger"><img src="resources/logo/Burger.svg" alt="burger_menu"></div>
+
+<!-- БУРГЕР-МЕНЮ -->
+
+                <div>
+                    <a href="" class="logo_scale">
+                            <img src="resources/logo/Burger.svg" alt="burger_menu">
+                    </a>
                 </div>
+
+<!---------------------------------------------------  REFACTORING  --------------------------------------------------->
+
 <!--  ЛОГОТИП УНИВЕРСИТЕТА + НАЗВАНИЕ   -->
-                <div class="logo">
-                    <div class="logo_ulgtu"><img src="resources/logo/logo.svg" alt="logo_ulgtu"></div>
-                    <div class="logo_text">Ульяновский государственный<br>технический университет</div>
+                <div>
+                    <a href="" class="logo_scale">
+                        <ul class="main-nav-list">
+                                <li class="logo_ulgtu"><img src="resources/logo/logo.svg" alt="logo_ulgtu"></li>
+                                <li class="logo_text">Ульяновский государственный<br>технический университет</li>
+                        </ul>
+                    </a>
+
                 </div>
             </div>
-            <div class="header_container_center">
-                <div><a href="#" class="menu_text">Перечень дисциплин</a></div>
+
+<!--  ОСНОВНОЕ МЕНЮ   -->
+
+<div class="header_container_center">
+    <ul class="main-nav-list">
+        <li class="menu_text"><a href="#" class="menu_text">Перечень дисциплин</a></li>
+        <li class="menu_text"><a href="#" class="menu_text">Об университете</a></li>
+        <li class="menu_text"><a href="#" class="menu_text">Документы университета</a></li>
+    </ul>
+</div>
+
+
+                <!-- <div><a href="#" class="menu_text">Перечень дисциплин</a></div>
                 <div><a href="#" class="menu_text">Об университете</a></div>
-                <div><a href="#" class="menu_text">Документы университета</a></div>
-            </div>
+                <div><a href="#" class="menu_text">Документы университета</a></div> -->
+            
+<!--  Кнопка ПОИСК + ЛИЧНЫЙ КАИБИНЕТ   -->
 
             <div class="header_container_right">
                 <div class="logo_search"><img src="resources/logo/Search_logo.svg" alt="button_search"></div>

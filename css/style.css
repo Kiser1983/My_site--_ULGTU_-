@@ -5,8 +5,6 @@
   src: url(../resources/fonts/Roboto-Medium.ttf); /* Путь к файлу со шрифтом */
  }
 
-
-
 *, *::before, *::after {
     padding: 0;
     margin: 0;
@@ -32,6 +30,8 @@ h1, h2, h3, h4, h5, h6 {
 /* CSS САЙТ УЛГТУ */
 
 body {
+  
+
 	font-family: "Segoe UI", "Roboto1";
   font-style: normal;
   font-weight: 600;
@@ -39,7 +39,6 @@ body {
   line-height: 100%;
 
 	color: rgba(23, 109, 234, 1);
-
   background: rgba(255, 255, 255, 1);
 }
 
@@ -50,7 +49,8 @@ header {
   position: fixed;
   left:0;
   right:0;
- z-index: 100;
+
+  z-index: 100;
 
   margin: 0 auto;
 
@@ -59,27 +59,35 @@ header {
   justify-content: center;
 
   background:rgba(255, 255, 255, 1);
+
+  
   }
 
 .header_container {
-  width: 1420px;
+  width: 1400px;
   height: 28px;
 
   margin: 0 auto ;
 
+  /* padding: 0 10px; */
+
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+
+  
 }
 
 /* -----HEADER-LEFT------ */
 
 .header_container_left {
-  width: 20%;
+
 
   display: flex;
   align-items: center;
   justify-content: left;
+  
 }
 
 /* -----HEADER-CENTER------ */
@@ -100,33 +108,57 @@ header {
   display: flex;
   align-items: center;
   justify-content: right;
+
 }
 
 /* -----BURGER-MENU------ */
 
-.burger {
-  width: 40px;
+.logo_scale {
   height: 100%;
 
   display: flex;
   align-items: center;
-  justify-content: center;
+
+  /* margin-left: 10px; */
+
+  transition: 2s linear;
 }
 
-.logo_burger {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.logo_scale:hover {
+  /* animation: scale 2s linear infinite; */
+  transform: scale(1.2);
+  opacity: 0.6;
 }
 
-/* -----LOGO------ */
+/*
+
+---------------------------------------------------  REFACTORING  ---------------------------------------------------
+
+border-bottom: solid 2px rgb(180, 74, 255);
+
+border: solid 2px rgb(255, 123, 123);
+border: solid 2px rgb(119, 255, 74);
+border: solid 2px rgb(180, 74, 255);
+
+
+*/
+
+
+/* ----- LOGO ------ */
 
 .logo {
   width: 80%;
   height: 100%;
+
+  border: solid 2px rgb(255, 123, 123);
+}
+
+.main-nav-list {
+  list-style: none;
   display: flex;
   align-items: center;
-  justify-content: left;
+
+  border: solid 2px rgb(255, 123, 123);
 }
 
 .logo_ulgtu {
@@ -134,7 +166,7 @@ header {
   align-items: center;
   justify-content: center;
 
-  margin: 0 4px 0 8px;
+  padding: 0 8px;
 }
 
 .logo_text {
@@ -163,8 +195,6 @@ header {
   /* align-items: center; */
   align-content: stretch;
   justify-content: center;
-
-  margin: 0 10px 0 0;
 
   background: rgba(23, 109, 234, 1);
   color: aliceblue;
@@ -1126,7 +1156,7 @@ footer {
 
   display: flex;
   align-items: center;
-justify-content: center;
+  justify-content: center;
 
   font-size: 18px;
   font-weight: 700;
