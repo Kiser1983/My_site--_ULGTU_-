@@ -2,115 +2,133 @@
 <html>
 
 <head>
+
     <meta charset="utf-8">
+
     <title>Главная страница УлГТУ</title>
 
     <link href="css/style_slider" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
-</head>
 
-<!--   -->
+</head>
 
 <body>
 
+<!--  -------------------------------------------------  HEADER  -------------------------------------------------  -->  
+
 <header>
-        <div class="header_container">
-            <div class="header_container_left">
 
-<!-- БУРГЕР-МЕНЮ -->
+    <div class="header_container">
 
-                <div>
-                    <a href="" class="logo_scale">
-                            <img src="resources/logo/Burger.svg" alt="burger_menu">
-                    </a>
-                </div>
+        <div class="header_container_left">
 
-<!---------------------------------------------------  REFACTORING  --------------------------------------------------->
+<!--  ------------------------- БУРГЕР-МЕНЮ -------------------------  -->  
 
-<!--  ЛОГОТИП УНИВЕРСИТЕТА + НАЗВАНИЕ   -->
-                <div>
-                    <a href="" class="logo_scale">
-                        <ul class="main-nav-list">
-                                <li class="logo_ulgtu"><img src="resources/logo/logo.svg" alt="logo_ulgtu"></li>
-                                <li class="logo_text">Ульяновский государственный<br>технический университет</li>
-                        </ul>
-                    </a>
-
-                </div>
+            <div class="burger">
+                <a href="" class="animation_rotate">
+                    <img src="resources/logo/Burger.svg" alt="burger_menu">
+                </a>
             </div>
 
-<!--  ОСНОВНОЕ МЕНЮ   -->
-
-<div class="header_container_center">
-    <ul class="main-nav-list">
-        <li class="menu_text"><a href="#" class="menu_text">Перечень дисциплин</a></li>
-        <li class="menu_text"><a href="#" class="menu_text">Об университете</a></li>
-        <li class="menu_text"><a href="#" class="menu_text">Документы университета</a></li>
-    </ul>
-</div>
-
-
-                <!-- <div><a href="#" class="menu_text">Перечень дисциплин</a></div>
-                <div><a href="#" class="menu_text">Об университете</a></div>
-                <div><a href="#" class="menu_text">Документы университета</a></div> -->
-            
-<!--  Кнопка ПОИСК + ЛИЧНЫЙ КАИБИНЕТ   -->
-
-            <div class="header_container_right">
-                <div class="logo_search"><img src="resources/logo/Search_logo.svg" alt="button_search"></div>
-                <div class="buttom_account"><a href="#" class="buttom_text_account">Личный кабинет</a></div>
+<!--  ------------------------- ЛОГОТИП УНИВЕРСИТЕТА + НАЗВАНИЕ -------------------------  -->         
+            <div>
+                <a href="" class="animation_scale">
+                    <ul class="main-nav-left">
+                            <li class="main-nav-left-logo"><img src="resources/logo/logo.svg" alt="logo"></li>
+                            <li class="main-nav-left-text">Ульяновский государственный<br>технический университет</li>
+                    </ul>
+                </a>
             </div>
+
         </div>
+
+<!--  ------------------------- ОСНОВНОЕ МЕНЮ  -------------------------  -->     
+
+        <div class="header_container_center">
+            <a href="" class="main-nav-center"><div class="animation_move_down">Перечень дисциплин</div></a>
+            <a href="" class="main-nav-center"><div class="animation_move_down">Об университете</div></a>
+            <a href="" class="main-nav-center"><div class="animation_move_down">Документы университета</div></a>
+        </div>
+
+<!--  ==================================  REFACTORING  ==================================   -->
+<!--  ------------------------- Кнопка ПОИСК + ЛИЧНЫЙ КАИБИНЕТ  -------------------------  -->    
+
+        <div class="header_container_right">
+                
+            <ul class="main-nav-right">
+                <li class="main-nav-right-logo-search">
+                    <div class="animation_scale_infinity">
+                        <img src="resources/logo/Search_logo.svg" alt="button_search" class="main-nav-right-img">
+                    </div>
+                </li>
+                
+                <li class="main-nav-right-button">
+                    <div class="animation_main_button">
+                        <div class="buttom_main">
+                            <a href="#" class="">Личный кабинет</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+           
+    </div>
+
 </header>
 
+<!--  -------------------------------------------------  MAIN  -------------------------------------------------  -->  
 
-<!--  ПУСТОЕ МЕНЮ   -->
+<main>
+
+<!--  ------------------------- ПУСТОЕ МЕНЮ -------------------------  -->  
+
 
 <section class="empty_heder">
     <div class="empty_heder_container"></div>
 </section>
 
+<!--  ------------------------- ГЛАВНЫЕ НОВОСТИ -------------------------  -->  
 
-<!--  ГЛАВНЫЕ НОВОСТИ   -->
 <section class="main_news">
     <div class="main_news_container">
         <div class="main_news_container_top">
-            <div class="main_news_container_left">
-                <div class="main_news_text"><b>УлГТУ</b> вошел в мировой рейтинг <b>Webometrics Ranking of World Universities</b></div>
-                <div class="buttom_main_news"><a href="#" class="buttom_text_main_news">Читать полностью</a></div>
-            </div>
+<div class="main_news_container_left">
+    <div class="main_news_text"><b>УлГТУ</b> вошел в мировой рейтинг <b>Webometrics Ranking of World Universities</b></div>
+    <div class="buttom_main_news"><a href="#" class="buttom_text_main_news">Читать полностью</a></div>
+</div>
 
-            <!-- <div class="news_line"></div> -->
+<!-- <div class="news_line"></div> -->
 
-            <div class="main_news_container_right">
-                <!-- <div class="main_news_circle"></div> -->
-                <!-- <div class="main_news_circle2"></div> -->
-                <!-- <div class="main_news_img1"><img src="resources/images/light-blue.png" alt=""></div> -->
-                <div class="main_news_img"><img src="resources/images/ranking.png" alt=""></div>
-            </div>
+<div class="main_news_container_right">
+    <!-- <div class="main_news_circle"></div> -->
+    <!-- <div class="main_news_circle2"></div> -->
+    <!-- <div class="main_news_img1"><img src="resources/images/light-blue.png" alt=""></div> -->
+    <div class="main_news_img"><img src="resources/images/ranking.png" alt=""></div>
+</div>
         </div>
 
 
          <div class="main_news_container_bottom">
 
-                <div class="slider_menu">
+    <div class="slider_menu">
 
-                    <button class="slider_lr">
-                        <a href="#"><img src="resources/left_white.svg" alt="button_left" class="button_lr"></a>
-                    </button>
+        <button class="slider_lr">
+<a href="#"><img src="resources/left_white.svg" alt="button_left" class="button_lr"></a>
+        </button>
 
-                    <a href="#" class="slider_dot"><img src="resources/dot_white.svg" alt="button_dot"  class="button_dot"></a>
-                    <a href="#" class="slider_dot"><img src="resources/dot_white.svg" alt="button_dot" class="button_dot"></a>
-                    <a href="#" class="slider_dot"><img src="resources/dot_white_select.svg" alt="button_dot_select" class="button_dot_select"></a>
-                    <a href="#" class="slider_dot"><img src="resources/dot_white.svg" alt="button_dot" class="button_dot"></a>
-                    <a href="#" class="slider_dot"><img src="resources/dot_white.svg" alt="button_dot" class="button_dot"></a>
+        <a href="#" class="slider_dot"><img src="resources/dot_white.svg" alt="button_dot"  class="button_dot"></a>
+        <a href="#" class="slider_dot"><img src="resources/dot_white.svg" alt="button_dot" class="button_dot"></a>
+        <a href="#" class="slider_dot"><img src="resources/dot_white_select.svg" alt="button_dot_select" class="button_dot_select"></a>
+        <a href="#" class="slider_dot"><img src="resources/dot_white.svg" alt="button_dot" class="button_dot"></a>
+        <a href="#" class="slider_dot"><img src="resources/dot_white.svg" alt="button_dot" class="button_dot"></a>
 
-                    <button class="slider_lr">
-                        <a href="#"><img src="resources/right_white.svg" alt="button_right" class="button_lr"></a>
-                    </button>
+        <button class="slider_lr">
+<a href="#"><img src="resources/right_white.svg" alt="button_right" class="button_lr"></a>
+        </button>
 
-                </div>
-            </div>
+    </div>
+</div>
         </div>
 </section>
 
@@ -120,97 +138,97 @@
     <div class="other_news_container">
 
         <div class="other_news_container_top">
-            <div class="title">Новости университета</div>
-            <div class="buttom_other_news"><a href="#" class="buttom_text_other_news">Все новости</a></div>
+<div class="title">Новости университета</div>
+<div class="buttom_other_news"><a href="#" class="buttom_text_other_news">Все новости</a></div>
         </div>
 
         <div class="other_news_container_center">
 <!-- МИНИ-НОВОСТЬ 1 -->
-            <div class="mini_news">
-                <div class="mini_news_container">
-                    <div class="mini_news_container_top">
-                        <img src="resources/images/news/1-_dlya-ulgtu_-kopiya.jpg" alt="News1" class="img_mini_news">
-                    </div>
+<div class="mini_news">
+    <div class="mini_news_container">
+        <div class="mini_news_container_top">
+<img src="resources/images/news/1-_dlya-ulgtu_-kopiya.jpg" alt="News1" class="img_mini_news">
+        </div>
 
-                    <div class="mini_news_container_bottom">
-                        <div class="mini_news_text">УлГТУ – уникальное пространство, где вся семья может получить новые знания</div>
-                    </div>
-                </div>
+        <div class="mini_news_container_bottom">
+<div class="mini_news_text">УлГТУ – уникальное пространство, где вся семья может получить новые знания</div>
+        </div>
+    </div>
 
-            </div>
+</div>
 <!-- МИНИ-НОВОСТЬ 2 -->
-            <div class="mini_news">
-                <div class="mini_news_container">
-                    <div class="mini_news_container_top">
-                        <img src="resources/images/news/Horiz_5_feb.jpeg" alt="News1" class="img_mini_news">
-                    </div>
+<div class="mini_news">
+    <div class="mini_news_container">
+        <div class="mini_news_container_top">
+<img src="resources/images/news/Horiz_5_feb.jpeg" alt="News1" class="img_mini_news">
+        </div>
 
-                    <div class="mini_news_container_bottom">
-                        <div class="mini_news_text">Студентов УлГТУ приглашают принять участие во Всероссийской интеллектуальной викторине «Лига знаний»</div>
-                    </div>
-                </div>
+        <div class="mini_news_container_bottom">
+<div class="mini_news_text">Студентов УлГТУ приглашают принять участие во Всероссийской интеллектуальной викторине «Лига знаний»</div>
+        </div>
+    </div>
 
-            </div>
+</div>
 <!-- МИНИ-НОВОСТЬ 3 -->
-            <div class="mini_news">
-                <div class="mini_news_container">
-                    <div class="mini_news_container_top">
-                        <img src="resources/images/news/2.jpg" alt="News1" class="img_mini_news">
-                    </div>
+<div class="mini_news">
+    <div class="mini_news_container">
+        <div class="mini_news_container_top">
+<img src="resources/images/news/2.jpg" alt="News1" class="img_mini_news">
+        </div>
 
-                    <div class="mini_news_container_bottom">
-                        <div class="mini_news_text">Приёмная кампания 2022г заочно - вечернего факультета ИнНО</div>
-                    </div>
-                </div>
+        <div class="mini_news_container_bottom">
+<div class="mini_news_text">Приёмная кампания 2022г заочно - вечернего факультета ИнНО</div>
+        </div>
+    </div>
 
-            </div>
+</div>
 <!-- МИНИ-НОВОСТЬ 4 -->
-            <div class="mini_news">
-                <div class="mini_news_container">
-                    <div class="mini_news_container_top">
-                        <img src="resources/images/news//IMG_1718.jpg" alt="News1" class="img_mini_news">
-                    </div>
+<div class="mini_news">
+    <div class="mini_news_container">
+        <div class="mini_news_container_top">
+<img src="resources/images/news//IMG_1718.jpg" alt="News1" class="img_mini_news">
+        </div>
 
-                    <div class="mini_news_container_bottom">
-                        <div class="mini_news_text">В общежитии УлГТУ улучшены жилищные условия</div>
-                    </div>
-                </div>
+        <div class="mini_news_container_bottom">
+<div class="mini_news_text">В общежитии УлГТУ улучшены жилищные условия</div>
+        </div>
+    </div>
 
-            </div>
+</div>
 <!-- МИНИ-НОВОСТЬ 5 -->
-            <div class="mini_news">
-                <div class="mini_news_container">
-                    <div class="mini_news_container_top">
-                        <img src="resources/images/news/tMdW2oTU6Jk.jpg" alt="News1" class="img_mini_news">
-                    </div>
+<div class="mini_news">
+    <div class="mini_news_container">
+        <div class="mini_news_container_top">
+<img src="resources/images/news/tMdW2oTU6Jk.jpg" alt="News1" class="img_mini_news">
+        </div>
 
-                    <div class="mini_news_container_bottom">
-                        <div class="mini_news_text">Продолжается приём заявок на всероссийский конкурс «Экосистема Города»</div>
-                    </div>
-                </div>
+        <div class="mini_news_container_bottom">
+<div class="mini_news_text">Продолжается приём заявок на всероссийский конкурс «Экосистема Города»</div>
+        </div>
+    </div>
 
-            </div>
+</div>
 
         </div>
 
         <div class="other_news_container_bottom">
-            <div class="slider_menu">
+<div class="slider_menu">
 
-                <button class="slider_lr">
-                    <a href="#"><img src="resources/left_blue.svg" alt="button_left" class="button_lr"></a>
-                </button>
+    <button class="slider_lr">
+        <a href="#"><img src="resources/left_blue.svg" alt="button_left" class="button_lr"></a>
+    </button>
 
-                <a href="#" class="slider_dot"><img src="resources/dot_blue.svg" alt="button_dot"  class="button_dot"></a>
-                <a href="#" class="slider_dot"><img src="resources/dot_blue.svg" alt="button_dot" class="button_dot"></a>
-                <a href="#" class="slider_dot"><img src="resources/dot_blue_select.svg" alt="button_dot_select" class="button_dot_select"></a>
-                <a href="#" class="slider_dot"><img src="resources/dot_blue.svg" alt="button_dot" class="button_dot"></a>
-                <a href="#" class="slider_dot"><img src="resources/dot_blue.svg" alt="button_dot" class="button_dot"></a>
+    <a href="#" class="slider_dot"><img src="resources/dot_blue.svg" alt="button_dot"  class="button_dot"></a>
+    <a href="#" class="slider_dot"><img src="resources/dot_blue.svg" alt="button_dot" class="button_dot"></a>
+    <a href="#" class="slider_dot"><img src="resources/dot_blue_select.svg" alt="button_dot_select" class="button_dot_select"></a>
+    <a href="#" class="slider_dot"><img src="resources/dot_blue.svg" alt="button_dot" class="button_dot"></a>
+    <a href="#" class="slider_dot"><img src="resources/dot_blue.svg" alt="button_dot" class="button_dot"></a>
 
-                <button class="slider_lr">
-                    <a href="#"><img src="resources/right_blue.svg" alt="button_right" class="button_lr"></a>
-                </button>
+    <button class="slider_lr">
+        <a href="#"><img src="resources/right_blue.svg" alt="button_right" class="button_lr"></a>
+    </button>
 
-            </div>
+</div>
         </div>
     </div>
 
@@ -221,196 +239,196 @@
     <div class="vocations_container">
 
         <div class="vocations_container_top">
-            <div class="title">Востребованные профессии</div>
-            <div class="buttom_other_news"><a href="#" class="buttom_text_other_news">Все направления</a></div>
+<div class="title">Востребованные профессии</div>
+<div class="buttom_other_news"><a href="#" class="buttom_text_other_news">Все направления</a></div>
         </div>
 
         <div class="vocations_container_center">
 
 <!--Программист разработчик<br>(Frontend-->
 
-            <div class="vocation">
-                <div class="vocation_container">
-                    <div class="vocation_container_top">
-                        <div class="vocation_container_top_text">Программист разработчик<br>(Frontend)</div>
-                    </div>
+<div class="vocation">
+    <div class="vocation_container">
+        <div class="vocation_container_top">
+<div class="vocation_container_top_text">Программист разработчик<br>(Frontend)</div>
+        </div>
 
-                    <div class="vocation_container_center1">
-                       <div class="vocation_container_center1_text">
-                           Вы научитесь создавать выразительную и доступную разметку, работать с графическим макетом, строить сетки страниц, оформлять декоративные элементы и текстовое содержание, оптимизировать код и готовить завершённый проект к публикации</div>
-                    </div>
+        <div class="vocation_container_center1">
+           <div class="vocation_container_center1_text">
+   Вы научитесь создавать выразительную и доступную разметку, работать с графическим макетом, строить сетки страниц, оформлять декоративные элементы и текстовое содержание, оптимизировать код и готовить завершённый проект к публикации</div>
+        </div>
 
-                    <div class="vocation_container_center2"></div>
-
-
-                    <div class="vocation_container_center3">
-
-                        <div class="center_row">
-                            <div class="center_column">
-                                <div class="big_text_red">35</div>
-                                <div class="small_text">бюджетных мест</div>
-                            </div>
-
-                            <div class="center_column">
-                                <div class="big_text_blue">235</div>
-                                <div class="small_text">подано заявок</div>
-                            </div>
-                       </div>
-
-                    </div>
-
-                    <div class="vocation_container_bottom">
-                        <div class="btn_voc"><div class="buttom_main_news"><a href="#" class="buttom_text_main_news">Подать заявку</a></div></div>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Программист разработчик<br>(Backend) -->
-
-            <div class="vocation">
-                <div class="vocation_container">
-                    <div class="vocation_container_top">
-                        <div class="vocation_container_top_text">Программист разработчик<br>(Backend)</div>
-                    </div>
-
-                    <div class="vocation_container_center1">
-                       <div class="vocation_container_center1_text">
-                        Back-end (оборотная сторона) developer) — это специалист, который занимается программно-административной частью веб-приложения, внутренним содержанием системы, серверными технологиями — базой данных, архитектурой, программной логикой</div>
-                    </div>
-
-                    <div class="vocation_container_center2">
-
-                    </div>
+        <div class="vocation_container_center2"></div>
 
 
-                    <div class="vocation_container_center3">
+        <div class="vocation_container_center3">
 
-                        <div class="center_row">
-                            <div class="center_column">
-                                <div class="big_text_red">30</div>
-                                <div class="small_text">бюджетных мест</div>
-                            </div>
+<div class="center_row">
+    <div class="center_column">
+        <div class="big_text_red">35</div>
+        <div class="small_text">бюджетных мест</div>
+    </div>
 
-                            <div class="center_column">
-                                <div class="big_text_blue">321</div>
-                                <div class="small_text">подано заявок</div>
-                            </div>
-                       </div>
+    <div class="center_column">
+        <div class="big_text_blue">235</div>
+        <div class="small_text">подано заявок</div>
+    </div>
+           </div>
 
-                    </div>
+        </div>
 
-                    <div class="vocation_container_bottom">
-                        <div class="btn_voc"><div class="buttom_main_news"><a href="#" class="buttom_text_main_news">Подать заявку</a></div></div>
-                    </div>
-                </div>
+        <div class="vocation_container_bottom">
+<div class="btn_voc"><div class="buttom_main_news"><a href="#" class="buttom_text_main_news">Подать заявку</a></div></div>
+        </div>
+    </div>
 
-            </div>
+</div>
 
-            <!-- Программист разработчик<br>(Fullstack) -->
+<!-- Программист разработчик<br>(Backend) -->
 
-            <div class="vocation">
-                <div class="vocation_container">
-                    <div class="vocation_container_top">
-                        <div class="vocation_container_top_text">Программист разработчик<br>(Fullstack)</div>
-                    </div>
+<div class="vocation">
+    <div class="vocation_container">
+        <div class="vocation_container_top">
+<div class="vocation_container_top_text">Программист разработчик<br>(Backend)</div>
+        </div>
 
-                    <div class="vocation_container_center1">
-                       <div class="vocation_container_center1_text">
-                        Full-stack developer (или фулстек-разработчик) – это разработчик, который должен разбираться во всем стеке технологий и используемых в проекте компонентов, как в части фронтенда, так и бэкенда.</div>
-                    </div>
+        <div class="vocation_container_center1">
+           <div class="vocation_container_center1_text">
+Back-end (оборотная сторона) developer) — это специалист, который занимается программно-административной частью веб-приложения, внутренним содержанием системы, серверными технологиями — базой данных, архитектурой, программной логикой</div>
+        </div>
 
+        <div class="vocation_container_center2">
 
-                    <div class="vocation_container_center2">
-
-                    </div>
-
-
-                    <div class="vocation_container_center3">
-
-                        <div class="center_row">
-                            <div class="center_column">
-                                <div class="big_text_red">25</div>
-                                <div class="small_text">бюджетных мест</div>
-                            </div>
-
-                            <div class="center_column">
-                                <div class="big_text_blue">287</div>
-                                <div class="small_text">подано заявок</div>
-                            </div>
-                       </div>
-
-                    </div>
-
-                    <div class="vocation_container_bottom">
-                        <div class="btn_voc"><div class="buttom_main_news"><a href="#" class="buttom_text_main_news">Подать заявку</a></div></div>
-                        
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Программист разработчик<br>(Fullstack) -->
-
-            <div class="vocation">
-                <div class="vocation_container">
-                    <div class="vocation_container_top">
-                        <div class="vocation_container_top_text">Программист разработчик<br>(Fullstack)</div>
-                    </div>
-
-                    <div class="vocation_container_center1">
-                       <div class="vocation_container_center1_text">
-                        Full-stack developer (или фулстек-разработчик) – это разработчик, который должен разбираться во всем стеке технологий и используемых в проекте компонентов, как в части фронтенда, так и бэкенда.</div>
-                    </div>
-
-                    <div class="vocation_container_center2">
-
-                    </div>
+        </div>
 
 
-                    <div class="vocation_container_center3">
+        <div class="vocation_container_center3">
 
-                        <div class="center_row">
-                            <div class="center_column">
-                                <div class="big_text_red">25</div>
-                                <div class="small_text">бюджетных мест</div>
-                            </div>
+<div class="center_row">
+    <div class="center_column">
+        <div class="big_text_red">30</div>
+        <div class="small_text">бюджетных мест</div>
+    </div>
 
-                            <div class="center_column">
-                                <div class="big_text_blue">336</div>
-                                <div class="small_text">подано заявок</div>
-                            </div>
-                       </div>
+    <div class="center_column">
+        <div class="big_text_blue">321</div>
+        <div class="small_text">подано заявок</div>
+    </div>
+           </div>
 
-                    </div>
+        </div>
 
-                    <div class="vocation_container_bottom">
-                        <div class="btn_voc"><div class="buttom_main_news"><a href="#" class="buttom_text_main_news">Подать заявку</a></div></div>
-                    </div>
-                </div>
+        <div class="vocation_container_bottom">
+<div class="btn_voc"><div class="buttom_main_news"><a href="#" class="buttom_text_main_news">Подать заявку</a></div></div>
+        </div>
+    </div>
 
-            </div>
+</div>
+
+<!-- Программист разработчик<br>(Fullstack) -->
+
+<div class="vocation">
+    <div class="vocation_container">
+        <div class="vocation_container_top">
+<div class="vocation_container_top_text">Программист разработчик<br>(Fullstack)</div>
+        </div>
+
+        <div class="vocation_container_center1">
+           <div class="vocation_container_center1_text">
+Full-stack developer (или фулстек-разработчик) – это разработчик, который должен разбираться во всем стеке технологий и используемых в проекте компонентов, как в части фронтенда, так и бэкенда.</div>
+        </div>
+
+
+        <div class="vocation_container_center2">
+
+        </div>
+
+
+        <div class="vocation_container_center3">
+
+<div class="center_row">
+    <div class="center_column">
+        <div class="big_text_red">25</div>
+        <div class="small_text">бюджетных мест</div>
+    </div>
+
+    <div class="center_column">
+        <div class="big_text_blue">287</div>
+        <div class="small_text">подано заявок</div>
+    </div>
+           </div>
+
+        </div>
+
+        <div class="vocation_container_bottom">
+<div class="btn_voc"><div class="buttom_main_news"><a href="#" class="buttom_text_main_news">Подать заявку</a></div></div>
+
+        </div>
+    </div>
+
+</div>
+
+<!-- Программист разработчик<br>(Fullstack) -->
+
+<div class="vocation">
+    <div class="vocation_container">
+        <div class="vocation_container_top">
+<div class="vocation_container_top_text">Программист разработчик<br>(Fullstack)</div>
+        </div>
+
+        <div class="vocation_container_center1">
+           <div class="vocation_container_center1_text">
+Full-stack developer (или фулстек-разработчик) – это разработчик, который должен разбираться во всем стеке технологий и используемых в проекте компонентов, как в части фронтенда, так и бэкенда.</div>
+        </div>
+
+        <div class="vocation_container_center2">
+
+        </div>
+
+
+        <div class="vocation_container_center3">
+
+<div class="center_row">
+    <div class="center_column">
+        <div class="big_text_red">25</div>
+        <div class="small_text">бюджетных мест</div>
+    </div>
+
+    <div class="center_column">
+        <div class="big_text_blue">336</div>
+        <div class="small_text">подано заявок</div>
+    </div>
+           </div>
+
+        </div>
+
+        <div class="vocation_container_bottom">
+<div class="btn_voc"><div class="buttom_main_news"><a href="#" class="buttom_text_main_news">Подать заявку</a></div></div>
+        </div>
+    </div>
+
+</div>
 
         </div>
 
         <div class="vocations_container_bottom">
-            <div class="slider_menu">
+<div class="slider_menu">
 
-                <button class="slider_lr">
-                    <a href="#"><img src="resources/left_blue.svg" alt="button_left" class="button_lr"></a>
-                </button>
+    <button class="slider_lr">
+        <a href="#"><img src="resources/left_blue.svg" alt="button_left" class="button_lr"></a>
+    </button>
 
-                <a href="#" class="slider_dot"><img src="resources/dot_blue.svg" alt="button_dot"  class="button_dot"></a>
-                <a href="#" class="slider_dot"><img src="resources/dot_blue.svg" alt="button_dot" class="button_dot"></a>
-                <a href="#" class="slider_dot"><img src="resources/dot_blue_select.svg" alt="button_dot_select" class="button_dot_select"></a>
-                <a href="#" class="slider_dot"><img src="resources/dot_blue.svg" alt="button_dot" class="button_dot"></a>
-                <a href="#" class="slider_dot"><img src="resources/dot_blue.svg" alt="button_dot" class="button_dot"></a>
+    <a href="#" class="slider_dot"><img src="resources/dot_blue.svg" alt="button_dot"  class="button_dot"></a>
+    <a href="#" class="slider_dot"><img src="resources/dot_blue.svg" alt="button_dot" class="button_dot"></a>
+    <a href="#" class="slider_dot"><img src="resources/dot_blue_select.svg" alt="button_dot_select" class="button_dot_select"></a>
+    <a href="#" class="slider_dot"><img src="resources/dot_blue.svg" alt="button_dot" class="button_dot"></a>
+    <a href="#" class="slider_dot"><img src="resources/dot_blue.svg" alt="button_dot" class="button_dot"></a>
 
-                <button class="slider_lr">
-                    <a href="#"><img src="resources/right_blue.svg" alt="button_right" class="button_lr"></a>
-                </button>
+    <button class="slider_lr">
+        <a href="#"><img src="resources/right_blue.svg" alt="button_right" class="button_lr"></a>
+    </button>
 
-            </div>
+</div>
         </div>
     </div>
 
@@ -422,88 +440,88 @@
     <div class="requests_container">
 
         <div class="requests_container_top">
-            <div class="title">Подать заявку</div>
+<div class="title">Подать заявку</div>
         </div>
 
         <div class="requests_container_center">
 <!--------------------- ------------------------------->
-                <div class="request_container">
-                    <div class="request_container_left">
-                        <div class="request_container_top">
-                            <div class="request_input_col">
-                                <p>Ваше ФИО</p>
-                                <p><input class="input_text" placeholder="Иванов Иван Иванович"></p>
-                            </div>
-                            
-                            <div class="request_input_col">
-                                <p>Факультет</p>
-                                <!-- <p><input class="input_text" placeholder="Выберите факультет"></p> -->
+    <div class="request_container">
+        <div class="request_container_left">
+<div class="request_container_top">
+    <div class="request_input_col">
+        <p>Ваше ФИО</p>
+        <p><input class="input_text" placeholder="Иванов Иван Иванович"></p>
+    </div>
+    
+    <div class="request_input_col">
+        <p>Факультет</p>
+        <!-- <p><input class="input_text" placeholder="Выберите факультет"></p> -->
 
-                                <select class="select_trend">
-                                    <option class="option_trend">Выберите факультет</option>
-                                    <option class="option_trend">Факультет информационных систем и технологий</option>
-                                    <option class="option_trend">Строительный факультет</option> 
-                                    <option class="option_trend">Энергетический факультет</option> 
-                                    <option class="option_trend">Машиностроительный факультет</option> 
-                                    <option class="option_trend">Радиотехнический факультет</option>
-                                    <option class="option_trend">Гуманитарный факультет</option> 
-                                  </select>
+        <select class="select_trend">
+<option class="option_trend">Выберите факультет</option>
+<option class="option_trend">Факультет информационных систем и технологий</option>
+<option class="option_trend">Строительный факультет</option> 
+<option class="option_trend">Энергетический факультет</option> 
+<option class="option_trend">Машиностроительный факультет</option> 
+<option class="option_trend">Радиотехнический факультет</option>
+<option class="option_trend">Гуманитарный факультет</option> 
+          </select>
 
-                            </div>
-                            <div class="request_input_col">
-                                <p>Номер телефона</p>
-                                <p><input class="input_text" placeholder="+7 (999) 999 - 99 - 99"></p>
-                            </div>
-                            <div class="request_input_col">
-                                <p>Направление</p>
-                                
-                                <select class="select_trend">
-                                    <option class="option_trend">Выберите кафедру</option>
-                                    <option class="option_trend">Кафедра «Измерительно-вычислительные комплексы»</option>
-                                    <option class="option_trend">Кафедра «Прикладная математика и информатика»</option> 
-                                    <option class="option_trend">Кафедра «Вычислительная техника»</option> 
-                                    <option class="option_trend">Кафедра «Информационные системы»</option> 
-                                  </select>
+    </div>
+    <div class="request_input_col">
+        <p>Номер телефона</p>
+        <p><input class="input_text" placeholder="+7 (999) 999 - 99 - 99"></p>
+    </div>
+    <div class="request_input_col">
+        <p>Направление</p>
+        
+        <select class="select_trend">
+<option class="option_trend">Выберите кафедру</option>
+<option class="option_trend">Кафедра «Измерительно-вычислительные комплексы»</option>
+<option class="option_trend">Кафедра «Прикладная математика и информатика»</option> 
+<option class="option_trend">Кафедра «Вычислительная техника»</option> 
+<option class="option_trend">Кафедра «Информационные системы»</option> 
+          </select>
 
-                            </div>
-                            <div class="request_input_col">
-                                <p>Электронная почта</p>
-                                <p><input class="input_text" placeholder="pochta@mail.ru"></p>
-                            </div>
-                            <div class="request_input_col">
-                                <p>Прикрепить документы</p>
-                                <div class="send_file"><div><img src="resources/Vector.svg" alt=""><p>Загрузить документ</p></div></div>
-                            </div>
+    </div>
+    <div class="request_input_col">
+        <p>Электронная почта</p>
+        <p><input class="input_text" placeholder="pochta@mail.ru"></p>
+    </div>
+    <div class="request_input_col">
+        <p>Прикрепить документы</p>
+        <div class="send_file"><div><img src="resources/Vector.svg" alt=""><p>Загрузить документ</p></div></div>
+    </div>
 
-                        </div>
+</div>
 
-                        <div class="request_container_bottom">
+<div class="request_container_bottom">
 
-                            <div class="input_checkbox">
-                                <input c  type="checkbox" value="coding">
-                                <label for="coding">Даю согласие на обработку персональных данных</label>
-                             </div>
+    <div class="input_checkbox">
+        <input c  type="checkbox" value="coding">
+        <label for="coding">Даю согласие на обработку персональных данных</label>
+     </div>
 
-                            <div class="btn_voc"><div class="buttom_request"><a href="#" class="buttom_text_request">Подать документы</a></div></div>
-                        </div>
-                    </div>
+    <div class="btn_voc"><div class="buttom_request"><a href="#" class="buttom_text_request">Подать документы</a></div></div>
+</div>
+        </div>
 
-                    <div class="request_container_right">
-                            <div class="box">
-                                <div class="box-title"><div>Полезная информация</div></div>
-                                <div class="box-content">
-                                    <div class="box-content_text">Бюджетных мест :</div>
-                                    <div class="box-content_number">35</div>
-                                    <div class="box-content_text">Платных мест :</div>
-                                    <div class="box-content_number">35</div>
-                                    <div class="box-content_text">Подано заявок :</div>
-                                    <div class="box-content_number">235</div>
-                                </div>
-                            </div>
+        <div class="request_container_right">
+    <div class="box">
+        <div class="box-title"><div>Полезная информация</div></div>
+        <div class="box-content">
+<div class="box-content_text">Бюджетных мест :</div>
+<div class="box-content_number">35</div>
+<div class="box-content_text">Платных мест :</div>
+<div class="box-content_number">35</div>
+<div class="box-content_text">Подано заявок :</div>
+<div class="box-content_number">235</div>
+        </div>
+    </div>
 
 
-                    </div>
-                </div>
+        </div>
+    </div>
 
         </div>
 
@@ -511,35 +529,37 @@
 
 </section>
 
+</main>
+
 <footer>
    
         <div class="footer_container">
-            <div class="footer_container_width">
-                <div class="footer_container_left">
-                    <div class="footer_container_column">
-                        <div>Подписывайтесь на нас в соцсетях</div> 
-                        <div>
-                            <a href=""><img src="resources/logo/vk.svg" alt=""></a>
-                            <a href=""><img src="resources/logo/inst.svg" alt=""></a>
-                            <a href=""><img src="resources/logo/tg.svg" alt=""></a>
-                            <a href=""><img src="resources/logo/fb.svg" alt=""></a>
-                            <a href=""><img src="resources/logo/twit.svg" alt=""></a>
-                            <a href=""><img src="resources/logo/utobe.svg" alt=""></a>
-                            <a href=""><img src="resources/logo/ok.svg" alt=""></a>
-                        </div>
-                    </div>
-                </div>
+<div class="footer_container_width">
+    <div class="footer_container_left">
+        <div class="footer_container_column">
+<div>Подписывайтесь на нас в соцсетях</div> 
+<div>
+    <a href=""><img src="resources/logo/vk.svg" alt=""></a>
+    <a href=""><img src="resources/logo/inst.svg" alt=""></a>
+    <a href=""><img src="resources/logo/tg.svg" alt=""></a>
+    <a href=""><img src="resources/logo/fb.svg" alt=""></a>
+    <a href=""><img src="resources/logo/twit.svg" alt=""></a>
+    <a href=""><img src="resources/logo/utobe.svg" alt=""></a>
+    <a href=""><img src="resources/logo/ok.svg" alt=""></a>
+</div>
+        </div>
+    </div>
 
-                <div class="footer_container_center">
-                    <div>© 2022 Sergio_Ant, Inc. All rights reserved</div> 
-                </div>
+    <div class="footer_container_center">
+        <div>© 2022 Sergio_Ant, Inc. All rights reserved</div> 
+    </div>
 
-                <div class="footer_container_right">
-                   <div>Адреса и контакты<br>
-                    432027, г.Ульяновск, ул. Северный Венец, д.32<br>
-                    +7 (8422) 43-06-43, rector@ulstu.ru</div> 
-                </div>
-            </div>
+    <div class="footer_container_right">
+       <div>Адреса и контакты<br>
+        432027, г.Ульяновск, ул. Северный Венец, д.32<br>
+        +7 (8422) 43-06-43, rector@ulstu.ru</div> 
+    </div>
+</div>
         </div>
 
 </footer>

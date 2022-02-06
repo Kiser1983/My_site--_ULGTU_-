@@ -30,19 +30,20 @@ h1, h2, h3, h4, h5, h6 {
 /* CSS САЙТ УЛГТУ */
 
 body {
-  
-
+  list-style: none;
 	font-family: "Segoe UI", "Roboto1";
   font-style: normal;
   font-weight: 600;
 	font-size: 14px;
   line-height: 100%;
 
+
+
 	color: rgba(23, 109, 234, 1);
   background: rgba(255, 255, 255, 1);
 }
 
-/* -----HEADER------ */
+/* ----- HEADER ------ */
 
 header {
   height: 58px;
@@ -59,9 +60,9 @@ header {
   justify-content: center;
 
   background:rgba(255, 255, 255, 1);
-
-  
   }
+
+  /* ----- HEADER_CONTAINER ----- */
 
 .header_container {
   width: 1400px;
@@ -69,38 +70,38 @@ header {
 
   margin: 0 auto ;
 
-  /* padding: 0 10px; */
-
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-
-  
+  font-weight: 600;
+  font-size: 14px;
 }
 
-/* -----HEADER-LEFT------ */
+/* -----HEADER_CONTAINER_LEFT------ */
 
 .header_container_left {
-
+  width: 20%;
 
   display: flex;
   align-items: center;
   justify-content: left;
-  
+
+  /* padding-left: 10px; */
 }
 
-/* -----HEADER-CENTER------ */
+/* -----HEADER_CONTAINER_CENTER------ */
 
 .header_container_center {
   width: 60%;
-
+  height: 150%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+
 }
 
-/* -----HEADER-RIGHT----- */
+/* -----HEADER_CONTAINER_RIGHT----- */
 
 .header_container_right {
   width: 20%;
@@ -108,30 +109,42 @@ header {
   display: flex;
   align-items: center;
   justify-content: right;
-
+  
 }
 
-/* -----BURGER-MENU------ */
+/* -----FROM - HEADER_CONTAINER_LEFT------ */
 
-.logo_scale {
-  height: 100%;
+/* ----- LOGO - BURGER ------ */
 
+.burger {
+  margin-right: 4px;
+}
+
+/* ----- LOGO - ULGTU ------ */
+
+.main-nav-left{
   display: flex;
   align-items: center;
 
-  /* margin-left: 10px; */
-
-  transition: 2s linear;
+  font-size: 10px;
 }
 
-.logo_scale:hover {
-  /* animation: scale 2s linear infinite; */
-  transform: scale(1.2);
-  opacity: 0.6;
+.main-nav-left-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 4px;
 }
+
+.main-nav-left-text {
+  line-height: 100%;
+}
+
+/* -----FROM - HEADER_CONTAINER_CENTER ------ */
+/* Смотреть в анимации */
 
 /*
-
 ---------------------------------------------------  REFACTORING  ---------------------------------------------------
 
 border-bottom: solid 2px rgb(180, 74, 255);
@@ -140,78 +153,51 @@ border: solid 2px rgb(255, 123, 123);
 border: solid 2px rgb(119, 255, 74);
 border: solid 2px rgb(180, 74, 255);
 
-
 */
 
+/* -----FROM - HEADER_CONTAINER_RIGHT ------ */
 
-/* ----- LOGO ------ */
 
-.logo {
-  width: 80%;
-  height: 100%;
-
-  border: solid 2px rgb(255, 123, 123);
-}
-
-.main-nav-list {
-  list-style: none;
+.main-nav-right {
   display: flex;
   align-items: center;
-
-  border: solid 2px rgb(255, 123, 123);
 }
 
-.logo_ulgtu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  
+/* ----- LOGO - SEARCH ------ */
 
-  padding: 0 8px;
+.main-nav-right-logo-search {
+height: 100%;
+  margin-right: 12px;
 }
 
-.logo_text {
-  font-weight: 700;
-  font-size: 10px;
+.main-nav-right-img {
+  height: 20px;
+}
+
+.main-nav-right-button {
   line-height: 100%;
 }
 
-/* -----HEADER-CENTER-TEXT------ */
-.menu_text {
-  font-weight: 600;
-  font-size: 14px;
-}
+.buttom_main {
+  width: 180px;
+  height: 28px;
 
-.logo_search {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  margin: 0 16px 0 16px;
-}
-
-.buttom_account {
-  height: 100%;
-  display: flex;
-  /* align-items: center; */
-  align-content: stretch;
-  justify-content: center;
-
-  background: rgba(23, 109, 234, 1);
-  color: aliceblue;
-  border-radius: 99px;
-}
-
-.buttom_text_account {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  margin: 8px 30px ;
-
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
+
+  background: rgba(23, 109, 234, 1);
+  color:aliceblue;
+  border-radius: 99px;
+  border: solid 2px rgba(23, 109, 234, 1);;
 }
 
+
+/* -----            MAIN           ------ */
 /* ------- EMPTY_ HEADER -----------*/
 
 .empty_heder {
@@ -221,13 +207,13 @@ border: solid 2px rgb(180, 74, 255);
 }
 
 .empty_heder_container {
-height: 64px;
+height: 60px;
 display: flex;
 align-items: center;
 justify-content: center;
 }
 
-/* -----MAIN_NEWS------ */
+/* -----BIG_NEWS------ */
 
 .main_news {
   width: 1420px;
@@ -1190,7 +1176,7 @@ footer {
 }
 
 .footer_container_center > div {
-margin-bottom: 10px;
+margin-bottom: 20px;
 font-size: 12px;
 }
 
@@ -1212,4 +1198,120 @@ font-size: 12px;
   margin: 0 auto;
 
 
+}
+
+/* -------      ANIMATION      ------- */
+/* -------        MOVE_SCALE        ------- */
+
+.animation_scale {
+  display: flex;
+
+  transition: 0.5s linear;
+}
+
+.animation_scale:hover {
+  transform: scale(1.08);
+}
+
+/* -------        MOVE_SCALE_INFINITY      ------- */
+
+.animation_scale_infinity {
+  display: flex;
+
+  transition: 0.5s linear;
+}
+
+.animation_scale_infinity:hover {
+animation: scale 2s linear infinite;
+}
+
+ @keyframes scale {
+  0% {transform: scale(1.0); }
+  50% {transform: scale(1.3); }
+  100% {transform: scale(1.0); }
+} 
+
+/* -------        MOVE_ROTATE        ------- */
+
+.animation_rotate {
+  display: flex;
+
+  transition: 0.5s linear;
+}
+
+.animation_rotate:hover {
+  transform: rotate(90deg);
+}
+/* -------        MOVE_RIGHT      ------- */
+
+.animation_move_right {
+  display: flex;
+
+  transition: 1s;
+}
+
+.animation_move_right:hover {
+  transform: translate(12px, 0);
+  /* animation: scale 1s linear infinite; */
+}
+
+/* -------        MOVE_UP      ------- */
+
+.animation_move_down {
+  display: flex;
+  padding: 20px;
+  transition: 1s;
+}
+
+.animation_move_down:hover {
+  padding: 10px;
+  font-size: 16px;
+  
+  transform: translate(0, 12px);
+}
+
+/* @keyframes scale {
+  0% {transform: translate(0, 0); }
+  50% {transform: translate(12px, 0); }
+  100% {transform: translate(0, 0); }
+} */
+
+
+/* -------        MAIN_BUTTON      ------- */
+.animation_main_button {
+  display: flex;
+
+  animation: color_fon 2s linear infinite;
+}
+
+.animation_main_button:before {
+  width: 150%;
+  height: 150%;
+  position: absolute;
+
+  animation: color_fon 2s linear infinite;
+}
+
+@keyframes color_fon {
+  from {
+    border: solid 2px rgb(255, 255, 255);
+  }
+  50% {
+    border: solid 2px blue;
+  }
+  to {
+    border: solid 2px yellow;
+  }
+}
+
+/* -------        COLOR        ------- */
+
+.animation_color {
+  display: flex;
+
+  transition: 0.2s linear;
+}
+
+.animation_color:hover {
+  color: rgba(23, 109, 234, 1);
 }
